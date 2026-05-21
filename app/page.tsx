@@ -158,7 +158,7 @@ export default function Home() {
       {/* FIRST LANDING PAGE */}
       {!showGame && !showSecondPage && !showWishPage && (
 
-        <div className="min-h-screen bg-gradient-to-br from-[#ffe4ec] via-[#ffd6e7] to-[#ffc2dc] flex items-center justify-center overflow-hidden relative px-6">
+        <div className="min-h-[100dvh] bg-gradient-to-br from-[#ffe4ec] via-[#ffd6e7] to-[#ffc2dc] flex items-center justify-center overflow-hidden relative px-6">
 
           {/* Cute Romantic Background Emojis */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -290,7 +290,7 @@ export default function Home() {
       {/* GAME PAGE */}
       {showGame && !showSecondPage && !showWishPage && (
 
-        <div className="min-h-screen bg-gradient-to-b from-rose-100 to-pink-200 flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
+        <div className="min-h-[100dvh] bg-gradient-to-b from-rose-100 to-pink-200 flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
 
           {/* CINEMATIC ROMANTIC TRANSITION */}
           {showBlast && (
@@ -448,7 +448,7 @@ export default function Home() {
       {/* THIRD PAGE */}
       {showWishPage && !showSecondPage && (
 
-        <div className="min-h-screen bg-gradient-to-b from-rose-100 via-pink-50 to-white flex flex-col items-center justify-center text-center px-6 overflow-hidden relative">
+        <div className="min-h-[100dvh] bg-gradient-to-b from-rose-100 via-pink-50 to-white flex flex-col items-center justify-center text-center px-6 overflow-hidden relative">
 
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
@@ -532,7 +532,7 @@ export default function Home() {
       {/* FINAL PAGE */}
       {showSecondPage && (
 
-        <div className="min-h-screen bg-gradient-to-b from-rose-100 via-pink-50 to-white flex flex-col items-center justify-center text-center px-6 overflow-hidden relative">
+        <div className="min-h-[100dvh] bg-gradient-to-b from-rose-100 via-pink-50 to-white flex flex-col items-center justify-center text-center px-6 overflow-hidden relative">
 <div className="absolute top-0 left-0 w-96 h-96 bg-pink-300 blur-[150px] opacity-30 rounded-full"></div>
 
 <div className="absolute bottom-0 right-0 w-96 h-96 bg-rose-400 blur-[150px] opacity-30 rounded-full"></div>
