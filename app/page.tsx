@@ -371,10 +371,7 @@ export default function Home() {
               <button
                 id="priyanka-btn"
                 onClick={() => handleGameAnswer("Priyanka")}
-                id="priyanka-btn"
-onClick={() => handleGameAnswer("Priyanka")}
-
-onTouchStart={(e) => {
+                onTouchStart={(e) => {
 
   if (clickedButtons.length >= 3) return;
 
@@ -393,8 +390,6 @@ onTouchStart={(e) => {
   e.currentTarget.className =
     `game-btn bg-gradient-to-r from-rose-500 to-pink-500 text-white py-4 md:py-5 rounded-2xl md:rounded-3xl text-lg md:text-xl font-bold shadow-xl transition-all duration-300 transform ${random}`;
 }}
-
-onMouseEnter={(e) => {
                 onMouseEnter={(e) => {
                   
                     
