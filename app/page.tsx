@@ -371,7 +371,33 @@ export default function Home() {
               <button
                 id="priyanka-btn"
                 onClick={() => handleGameAnswer("Priyanka")}
+                id="priyanka-btn"
+onClick={() => handleGameAnswer("Priyanka")}
+
+onTouchStart={(e) => {
+
+  if (clickedButtons.length >= 3) return;
+
+  const positions = [
+    "translate-x-132",
+    "-translate-x-132",
+    "translate-y-120",
+    "-translate-y-120",
+    "translate-x-94 translate-y-106",
+    "-translate-x-94 -translate-y-106",
+  ];
+
+  const random =
+    positions[Math.floor(Math.random() * positions.length)];
+
+  e.currentTarget.className =
+    `game-btn bg-gradient-to-r from-rose-500 to-pink-500 text-white py-4 md:py-5 rounded-2xl md:rounded-3xl text-lg md:text-xl font-bold shadow-xl transition-all duration-300 transform ${random}`;
+}}
+
+onMouseEnter={(e) => {
                 onMouseEnter={(e) => {
+                  
+                    
 
                   if (clickedButtons.length >= 3) return;
 
