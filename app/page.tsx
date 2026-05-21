@@ -303,7 +303,7 @@ export default function Home() {
 
                 <div
                   key={i}
-                  className="absolute text-pink-300 opacity-40"
+                  className="absolute text-pink-300 opacity-90"
                   style={{
                     left: `${Math.random() * 100}%`,
                     top: `${Math.random() * 100}%`,
@@ -311,14 +311,14 @@ export default function Home() {
                     animationDuration: `${1 + Math.random() * 2}s`,
                   }}
                 >
-                  🐖✨🐷
+                  🐖
                 </div>
 
               ))}
 
               <div className="relative animate-[pulse_1s_ease-in-out_infinite]">
 
-                <div className="absolute inset-0 bg-red-500 blur-[80px] opacity-30 rounded-full"></div>
+                <div className="absolute inset-0 bg-red-500 blur-[80px] opacity-90 rounded-full"></div>
 
                 <button
                   type="button"
@@ -613,7 +613,7 @@ border
 border-white/30
 "
             >
-              <source src="/myvideo.mp4.mp4" type="video/mp4" />
+              <source src="/myvideo.mp4" type="video/mp4" />
             </video>
 
             {/* PHOTO GALLERY */}
