@@ -370,7 +370,11 @@ export default function Home() {
 
               <button
                 id="priyanka-btn"
-                onClick={() => handleGameAnswer("Priyanka")}
+                onClick={() => {
+  if (clickedButtons.length >= 3) {
+    handleGameAnswer("Priyanka");
+  }
+}}
                 onTouchStart={(e) => {
 
   if (clickedButtons.length >= 3) return;
