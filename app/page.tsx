@@ -295,26 +295,22 @@ export default function Home() {
           {/* CINEMATIC ROMANTIC TRANSITION */}
           {showBlast && (
 
-            <div className="absolute inset-0 z-50 flex items-center justify-center bg-pink-100/20 backdrop-blur-md overflow-hidden">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
-              <div className="absolute w-[500px] h-[300px] md:h-[500px] bg-pink-500 rounded-full blur-[180px] opacity-40 animate-pulse"></div>
-
-              {Array.from({ length: 6 }).map((_, i) => (
-
-                <div
-                  key={i}
-                  className="absolute text-pink-300 opacity-90"
-                  style={{
-                    left: `${Math.random() * 100}%`,
-                    top: `${Math.random() * 100}%`,
-                    fontSize: `${20 + Math.random() * 40}px`,
-                    animationDuration: `${1 + Math.random() * 2}s`,
-                  }}
-                >
-                  🐖
-                </div>
-
-              ))}
+  {Array.from({ length: 8 }).map((_, i) => (
+    <div
+      key={i}
+      className="absolute text-4xl animate-bounce opacity-70"
+      style={{
+        left: `${Math.random() * 100}%`,
+        top: `${Math.random() * 100}%`,
+        animationDelay: `${Math.random() * 3}s`,
+        animationDuration: `${2 + Math.random() * 2}s`,
+      }}
+    >
+      🐷
+    </div>
+  )}
 
               <div className="relative animate-[pulse_1s_ease-in-out_infinite]">
 
