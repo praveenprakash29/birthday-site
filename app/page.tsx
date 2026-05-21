@@ -573,7 +573,7 @@ border
 border-white/30
 "
             >
-              <source src="/birthday.mp4.mp4" type="video/mp4" />
+              <source src="/myvideo.mp4.mp4" type="video/mp4" />
             </video>
 
             {/* PHOTO GALLERY */}
