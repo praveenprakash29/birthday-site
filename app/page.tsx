@@ -267,7 +267,7 @@ export default function Home() {
                   placeholder="Enter Your Name ❤️"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full p-5 rounded-3xl bg-white/60 border border-white/40 outline-none text-black placeholder:text-gray-400 text-lg shadow-lg" focus:ring-4 focus:ring-pink-300"
+                  className="w-full p-5 rounded-3xl bg-white/60 border border-white/40 outline-none text-black placeholder:text-pink-300 text-lg shadow-lg focus:ring-4 focus:ring-pink-300"
                 />
 
                 <button
@@ -299,11 +299,11 @@ export default function Home() {
 
               <div className="absolute w-[500px] h-[300px] md:h-[500px] bg-pink-500 rounded-full blur-[180px] opacity-40 animate-pulse"></div>
 
-              {Array.from({ length: 25 }).map((_, i) => (
+              {Array.from({ length: 6 }).map((_, i) => (
 
                 <div
                   key={i}
-                  className="absolute text-pink-300 animate-ping"
+                  className="absolute text-pink-300 opacity-40"
                   style={{
                     left: `${Math.random() * 100}%`,
                     top: `${Math.random() * 100}%`,
@@ -311,14 +311,14 @@ export default function Home() {
                     animationDuration: `${1 + Math.random() * 2}s`,
                   }}
                 >
-                  🐖
+                  🐖✨🐷
                 </div>
 
               ))}
 
               <div className="relative animate-[pulse_1s_ease-in-out_infinite]">
 
-                <div className="absolute inset-0 bg-red-500 blur-[80px] opacity-50 rounded-full"></div>
+                <div className="absolute inset-0 bg-red-500 blur-[80px] opacity-30 rounded-full"></div>
 
                 <button
                   type="button"
@@ -376,10 +376,10 @@ export default function Home() {
   if (clickedButtons.length >= 3) return;
 
   const positions = [
-    "translate-x-132",
-    "-translate-x-132",
-    "translate-y-120",
-    "-translate-y-120",
+    "translate-x-102",
+    "-translate-x-112",
+    "translate-y-100",
+    "-translate-y-95",
     "translate-x-94 translate-y-106",
     "-translate-x-94 -translate-y-106",
   ];
@@ -397,10 +397,10 @@ export default function Home() {
                   if (clickedButtons.length >= 3) return;
 
                   const positions = [
-                    "translate-x-132",
-                    "-translate-x-132",
-                    "translate-y-120",
-                    "-translate-y-120",
+                    "translate-x-102",
+                    "-translate-x-112",
+                    "translate-y-100",
+                    "-translate-y-95",
                     "translate-x-94 translate-y-106",
                     "-translate-x-94 -translate-y-106",
                   ];
@@ -418,7 +418,7 @@ export default function Home() {
                   e.currentTarget.className =
                     "game-btn bg-gradient-to-r from-rose-500 to-pink-500 text-white py-4 md:py-5 rounded-2xl md:rounded-3xl text-lg md:text-xl font-bold shadow-xl transition-all duration-300";
                 }}
-                className="game-btn bg-gradient-to-r from-rose-500 to-pink-500 text-white py-4 md:py-5 rounded-2xl md:rounded-3xl text-lg md:text-xl font-bold shadow-xl transition-all duration-300"
+                className="game-btn bg-white/80 hover:bg-rose-100 py-4 md:py-5 rounded-2xl md:rounded-3xl text-lg md:text-xl font-bold transition-all duration-300 shadow-md text-gray-700"
               >
                 Priyanka 💖
               </button>
@@ -467,7 +467,7 @@ export default function Home() {
               return (
                 <div
                   key={i}
-                  className="absolute animate-[floating_3s_ease-in-out_infinite] opacity-90"
+                  className="absolute opacity-40"
                   style={{
                     left: `${Math.random() * 100}%`,
                     top: `${Math.random() * 100}%`,
@@ -481,11 +481,26 @@ export default function Home() {
             })}
 
           </div>
+          {Array.from({ length: 40 }).map((_, i) => {
+  const emojis = ["💖", "✨", "🎂", "🐷", "🌸"];
+  return (
+    <div
+      key={i}
+      className="absolute text-2xl opacity-70 animate-bounce"
+      style={{
+        left: `${Math.random() * 100}%`,
+        top: `${Math.random() * 100}%`,
+      }}
+    >
+      {emojis[Math.floor(Math.random() * emojis.length)]}
+    </div>
+  );
+})}
 
           <div className="relative z-10 max-w-full md:max-w-4xl w-full">
 
-            <h1 className="text-4xl md:text-7xl font-extrabold bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent mb-6 animate-[floating_3s_ease-in-out_infinite]">
-              Happy Birthday 💖
+            <h1 className="text-4xl md:text-7xl font-extrabold bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent mb-6">
+              Happy Birthday 
             </h1>
 
             <h2 className="text-3xl md:text-5xl font-bold text-gray-700 mb-8">
@@ -494,7 +509,7 @@ export default function Home() {
 
             <p className="text-lg md:text-2xl text-gray-600 leading-loose mb-10">
               Wishing you endless happiness, magical moments,
-              smiles, love and beautiful memories forever 💖
+              smiles and beautiful memories forever 
             </p>
 
             <img
