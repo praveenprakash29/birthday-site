@@ -267,7 +267,7 @@ export default function Home() {
                   placeholder="Enter Your Name ❤️"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full p-5 rounded-3xl bg-white/60 border border-white/40 outline-none text-lg shadow-lg focus:ring-4 focus:ring-pink-300"
+                  className="w-full p-5 rounded-3xl bg-white/60 border border-white/40 outline-none text-black placeholder:text-gray-400 text-lg shadow-lg" focus:ring-4 focus:ring-pink-300"
                 />
 
                 <button
