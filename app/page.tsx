@@ -198,7 +198,7 @@ export default function Home() {
           {/* CINEMATIC ROMANTIC TRANSITION */}
           {showBlast && (
 
-            <div className="absolute inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-md overflow-hidden">
+            <div className="absolute inset-0 z-50 flex items-center justify-center bg-pink-100/20 backdrop-blur-md overflow-hidden">
 
               {/* Background Glow */}
               <div className="absolute w-[500px] h-[300px] md:h-[500px] bg-pink-500 rounded-full blur-[180px] opacity-40 animate-pulse"></div>
@@ -295,7 +295,7 @@ export default function Home() {
           {/* CINEMATIC ROMANTIC TRANSITION */}
           {showBlast && (
 
-            <div className="absolute inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-md overflow-hidden">
+            <div className="absolute inset-0 z-50 flex items-center justify-center bg-pink-100/20 backdrop-blur-md overflow-hidden">
 
               <div className="absolute w-[500px] h-[300px] md:h-[500px] bg-pink-500 rounded-full blur-[180px] opacity-40 animate-pulse"></div>
 
@@ -613,7 +613,7 @@ border
 border-white/30
 "
             >
-              <source src="/myvideo.mp4" type="video/mp4" />
+              <source src="/birthday.mp4" type="video/mp4" />
             </video>
 
             {/* PHOTO GALLERY */}
